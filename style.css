@@ -1,60 +1,73 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container{
+
+.container {
     background-color: white;
     width: 400px;
     max-width: 1020px;
     overflow: hidden;
     border-radius: 5px;
 }
-.header{
+
+.header {
     padding: 30px 0 20px 0;
     background-color: lightgrey;
 }
-.header h2{
+
+.header h2 {
     text-align: center;
     text-transform: capitalize;
+    font-weight: 500;
 }
-.form{
+
+.form {
     padding: 30px 40px;
 }
-.form-control{
+
+.form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
-.form-control label{
+
+.form-control label {
     display: inline-block;
     margin-bottom: 5px;
 }
-.form-control input{
+
+.form-control input {
     display: block;
     width: 100%;
     border: 2px solid lightgrey;
     border-radius: 5px;
     padding: 10px;
 }
-.form-control img{
+
+.form-control img {
     position: absolute;
     visibility: hidden;
     top: 32px;
     right: 10px;
 }
-.form-control .small{
+
+.form-control .small {
     visibility: hidden;
     position: absolute;
 }
-button{
+
+button {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -64,22 +77,26 @@ button{
     font-size: 14px;
     cursor: pointer;
 }
-.form-control.success input{
-  border: 2px solid rgb(22, 218, 136);
-}
-.form-control.error input{
-    border: 2px solid rgb(230, 46, 14);
-  }
 
-.form-control.success img{
+.form-control.success input {
+    border: 2px solid rgb(22, 218, 136);
+}
+
+.form-control.error input {
+    border: 2px solid rgb(230, 46, 14);
+}
+
+.form-control.success img {
     color: rgb(22, 218, 136);
     visibility: hidden;
 }
-.form-control.error img{
+
+.form-control.error img {
     color: rgb(230, 46, 14);
     visibility: visible;
 }
-.form-control.error .small{
+
+.form-control.error .small {
     color: rgb(230, 46, 14);
     visibility: visible;
 }
